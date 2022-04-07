@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 
-test("render lets build e-commere website", () => {
+test("render MS-ZONE", () => {
   render(<App />);
-  const linkElement = screen.getByText(/lets build e-commere website/i);
+  const linkElement = screen.getByText(/MS-ZONE/i);
   expect(linkElement).toBeInTheDocument();
 });

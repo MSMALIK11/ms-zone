@@ -165,7 +165,7 @@ const TopBar = () => {
               variant="h6"
               noWrap
               component="div"
-              sx={{ fontWeight: "bold", color: "aqua" }}
+              sx={{ fontWeight: "bold", color: "tomato" }}
             >
               MS-ZONE
             </Typography>

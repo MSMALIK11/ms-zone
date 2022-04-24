@@ -13,10 +13,10 @@ const ListCards = () => {
         setProducts(data);
         setLoading(false);
       }
-      console.log(data);
+  
     };
     fetchproduct();
-  });
+  }, []);
   return (
     <Box>
       <Grid container justifyContent="center">
@@ -25,7 +25,7 @@ const ListCards = () => {
         ) : (
           products.map((product) => {
             return (
-              <Grid item sm={6} md={4} lg={3}>
+              <Grid item sm={6} md={4} lg={3} key={product.id}>
                 <Card product={product} />
               </Grid>
             );

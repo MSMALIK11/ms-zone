@@ -164,11 +164,12 @@ const TopBar = () => {
             <Typography
               variant="h6"
               noWrap
-              component="div"
+              component="h6"
               sx={{ fontWeight: "bold", color: "tomato" }}
             >
               MS-ZONE
             </Typography>
+           
             <Search>
               <SearchIconWrapper>
                 <SearchIcon />

@@ -1,8 +1,12 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen ,logRoles, getByText} from "@testing-library/react";
 import App from "./App";
 
 test("render MS-ZONE", () => {
   render(<App />);
-  const linkElement = screen.getByText(/MS-ZONE/i);
-  expect(linkElement).toBeInTheDocument();
+
+  const logoelement = screen.getByRole("textbox", {
+    name: "search",
+    exact: false,
+  });
+  expect(logoelement).toBeInTheDocument();
 });
